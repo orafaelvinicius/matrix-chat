@@ -107,17 +107,12 @@ export default function PaginaInicial() {
                 {appConfig.name}
               </Text>
             
-              <input 
-                type="text"
-                value={username}
-                onChange= {function (event) {
-                    const valor = event.target.value; // localizando o valor do input
-                    
-                    setUsername(valor); // Trocando o valor da variável
-                }}
-              />
-
               <TextField
+                value={username}
+                onChange={function (event) {
+                    const valor = event.target.value; // localizando o valor do input
+                    setUsername(valor); // Trocando o valor da variável com React
+                }}
                 fullWidth
                 textFieldColors={{
                   neutral: {
