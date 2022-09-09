@@ -106,7 +106,17 @@ export default function PaginaInicial() {
               <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[300] }}>
                 {appConfig.name}
               </Text>
-  
+            
+              <input 
+                type="text"
+                value={username}
+                onChange= {function (event) {
+                    const valor = event.target.value; // localizando o valor do input
+                    
+                    setUsername(valor); // Trocando o valor da variável
+                }}
+              />
+
               <TextField
                 fullWidth
                 textFieldColors={{
