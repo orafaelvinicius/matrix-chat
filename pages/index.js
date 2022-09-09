@@ -1,5 +1,6 @@
 import appConfig from '../config.json';
 import { Box, Button, Text, TextField, Image } from '@skynexui/components';
+import React from 'react';
 
 function GlobalStyle() {
     return (
@@ -64,8 +65,9 @@ function Titulo(props) {
 // export default HomePage
 
 export default function PaginaInicial() {
-    const username = 'peas';
-  
+    // const username = 'orafaelvinicius';
+    const [username, setUsername] = React.useState('orafaelvinicius')
+
     return (
       <>
         <GlobalStyle />
